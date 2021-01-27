@@ -2,9 +2,9 @@
 if (isset($_POST['submit'])) {
     // ini_set( 'display_errors', 1 ); # REMOVE // FOR DEBUG
     // error_reporting( E_ALL ); # REMOVE // FOR DEBUG
-    $from = "juanmagit@gmail.com"; // Email con el dominio del Hosting para evitar SPAM
+    $from = "contacto@polygonstudio.com.ar"; // Email con el dominio del Hosting para evitar SPAM
     $fromName = "PolygonStudio"; // Nombre que saldrá en el email recibido
-    $to = "juanmagit@gmail.com"; // Dirección donde se enviará el formulario
+    $to = "jgerez@polygonstudio.com.ar"; // Dirección donde se enviará el formulario
     // $subject = $_POST['validarAsunto']; // Asunto del Formulario
 
     /* Componemos el mensaje */
@@ -19,10 +19,10 @@ if (isset($_POST['submit'])) {
     // $fullMessage .= "Asunto: " . $_POST['validarAsunto'] . "\r\n";
     $fullMessage .= "Mensaje: " . $_POST['validarMensaje'] . "\r\n";
     $fullMessage .= "\r\n";
-    $fullMessage .= "Saludos!\r\n";
+    $fullMessage .= "Saludos!\r\n"; 
 
     /* Creamos las cabeceras del Email */
-    $headers = "Organization: RPF WEB\r\n";
+    $headers = "PolygonStudio S.A\r\n";
     $headers .= "From: " . $fromName . "<" . $from . ">\r\n";
     $headers .= "Reply-To: " . $_POST['validarEmail'] . "\r\n";
     $headers .= "Return-Path: " . $to . "\r\n";
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 
     /* Enviamos el Formulario*/
     if (mail($to, $fullMessage, $headers)) {
-        echo "<center><h2>El E-Mail se ha enviado correctamente!</h2></center>";
+        echo "<center><h2>El E-Mail se ha enviado correctamente, contestaremos tu consulta a la brevedad!</h2></center>";
     } else {
         echo "<center><h2>Ops ! El E-Mail ha fallado!</h2></center>S";
     }
