@@ -252,7 +252,8 @@
                 <div class="col-lg-6" data-aos="flip-left" data-aos-delay="400">
                     <h4 class="text-muted text-center">Web Design</h4>
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="images/backgrounds/bg_team/juan_manuel_gerez_partner.png"
+                        <img class="mx-auto rounded-circle"
+                            src="images/backgrounds/bg_team/juan_manuel_gerez_partner.png"
                             alt="Juanma Gerez Team Member">
                         <h4>Juan Manuel Gerez</h4>
                         <p class="text-muted"> Diseñador Web Freelancer</p>
@@ -330,38 +331,60 @@
             <p> Mensaje:<input type="text" name="mensaje" /> </p>
             <p><input type="submit" value="Enviar"></p>
         </form> -->
-        <form method="POST" action="https://localhost/test.php" class="needs-validation" novalidate>
 
-            <div class="container">
-                <div class="col-lg-4">
-                    <label for="validarNombre">Nombre:<span class="red">*</span></label>
-                    <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
-                </div>
 
-                <div class="col-lg-4">
-                    <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
-                    <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
-                </div>
 
-                <div class="col-md-4">
-                    <label for="validarEmail">Email:<span class="red">*</span></label>
-                    <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
-                </div>
+        <div class="container">
+            <div class="">
+                <div class="col-lg-2"></div>
+                <form method="POST" action="https://localhost/test.php" class="needs-validation" novalidate>
 
-                <div class="col-md-4">
-                    <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
-                    <textarea class="form-control" id="validationMensaje" name="validarMensaje" rows="3" min="25"
-                        required></textarea>
-                </div>
-                <div class="col-md-4">
-                    <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
-                    <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
-                </div>
+                    <div class="container">
+                        <!-- <div class="row"> -->
+                        <div class="col-lg-4">
+                            <label for="validarNombre">Nombre:<span class="red">*</span></label>
+                            <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+                        </div>
 
+                        <div class="col-lg-4">
+                            <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+                            <input type="text" class="form-control" id="validarApellidos" name="validarApellidos"
+                                required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="validarEmail">Email:<span class="red">*</span></label>
+                            <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+                            <textarea class="form-control" id="validationMensaje" name="validarMensaje" rows="3"
+                                min="25" required></textarea>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+                            <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </form>
             </div>
+        </div>
+        <div class="col-md"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    Contactanos
+                </div>
+                <div class="col-sm">
+                    Mapa del sitio
+                </div>
             </div>
-        </form>
-    </section>
+    </div>
+</div>
+</div>
+</section>
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
